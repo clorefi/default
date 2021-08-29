@@ -1,29 +1,15 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import Layout from '../components/layout'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi Remy</h1>
-    <p>Welcome to my new website.</p>
-    <p>I still have to build it.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
- 
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout pageTitle="Home page">
+     <h1>Hi Remy</h1>
+     <p>Welcome to my new website.</p>
+     <p>I still have to build it.</p>
+    
+    </Layout>
+  )
+}
 
 export default IndexPage
