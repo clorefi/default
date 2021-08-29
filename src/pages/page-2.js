@@ -5,11 +5,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const SecondPage = () => (
-  <Layout>
-    <Seo title="Page two" />
+  <Layout pageTitle="Page 2">
     <h1>Hi from the second page</h1>
     <p>I dont know what to write</p>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
